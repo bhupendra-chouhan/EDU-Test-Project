@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Art Auction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>NFT Art Auction House</h1>
+        </header>
+
+        <section class="mint-section">
+            <h2>Mint a New NFT</h2>
+            <input type="text" id="mint-owner" placeholder="Owner Address">
+            <input type="text" id="mint-uri" placeholder="Token URI">
+            <button id="mint-btn">Mint NFT</button>
+        </section>
+
+        <section class="auction-section">
+            <h2>Create Auction</h2>
+            <input type="number" id="auction-tokenId" placeholder="Token ID">
+            <input type="number" id="auction-price" placeholder="Starting Price (ETH)">
+            <input type="number" id="auction-duration" placeholder="Duration (seconds)">
+            <button id="create-auction-btn">Create Auction</button>
+        </section>
+
+        <section class="bid-section">
+            <h2>Place Bid</h2>
+            <input type="number" id="bid-auctionId" placeholder="Auction ID">
+            <input type="number" id="bid-amount" placeholder="Bid Amount (ETH)">
+            <button id="place-bid-btn">Place Bid</button>
+        </section>
+
+        <section class="end-auction-section">
+            <h2>End Auction</h2>
+            <input type="number" id="end-auctionId" placeholder="Auction ID">
+            <button id="end-auction-btn">End Auction</button>
+        </section>
+
+        <div id="status"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
